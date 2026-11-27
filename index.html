@@ -176,46 +176,6 @@
  
 <hr>
    
-<button id="colorButton">Click to change colour</button>
-    <script>
-var button = document.getElementById("colorButton");
-
-function changeColor() {
-    var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    button.style.backgroundColor = randomColor;
-}
-
-button.addEventListener("click", changeColor);
-</script>
-    <p>Enter some text below:</p>
-
-<input type="text" id="textInput">
-
-<button id="alertButton">Show Alert</button>
-
-<script>
-var input = document.getElementById("textInput");
-var alertButton = document.getElementById("alertButton");
-
-function showAlert() {
-    alert("You entered: " + input.value);
-}
-
-alertButton.addEventListener("click", showAlert);
-</script>
-   
-<p id="randomNumber">Your random number will appear here.</p>
-
-<button id="numberButton">Generate Random Number</button>
-
-<script>
-function generateNumber() {
-    var number = Math.floor(Math.random() * 10) + 1;
-    document.getElementById("randomNumber").innerHTML = number;
-}
-
-document.getElementById("numberButton").addEventListener("click", generateNumber);
-</script>
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -227,8 +187,8 @@ document.getElementById("numberButton").addEventListener("click", generateNumber
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'OtiC11';
-        const repo = 'OtiC11';
+        const username = 'FEPSFY7007126';
+        const repo = 'FY7007126';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -287,16 +247,15 @@ document.getElementById("numberButton").addEventListener("click", generateNumber
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-      const IntroductionCount = displayWordCount("Introduction_InText");
-      const AnalysisCount = displayWordCount("Analysis_InText");
-      const ConclusionCount = displayWordCount("Conclusion_InText");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.addEventListener('load', displayTotalWordCount);
-</script>  
+  window.onload = displayTotalWordCount;
+</script>
 </body>
 </html>
