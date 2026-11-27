@@ -1,96 +1,319 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
+
 <head>
-  <img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
-<h1><b>ENG0018 Computer Laboratory 2026/27</b><h1>
-  <h2>Student URN: 7007126</h2>
-<hr>
-<h2 style=”font-family:calibri:”><b>Conference paper: How can drones thrive in war?</b></h2>
-<hr>
+    <title>How Can Drones Thrive In War?</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <!style for tables>
-  <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-
-    }
-
-    td,th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  
-  
-  
-  
-  </style>
-
-  <style>
-    p.exl {
-      margin-;eft: 250px;
-    }
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin-left: 50px;
+        }
     </style>
+
 </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-    .mySlides {display:none;}
-  </style>
+<body>
 
+   <!-- University banner -->
+   <img src="download.png" alt="Banner" width="900" height="300">
 
+   <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
 
-<!table of contents>
-  <table>
+   <h2>Student URN: 7007126</h2>
 
-    <tr>
-      <th><h3>CONTENTS</</h3></th>
-    </tr>
-    <tr>
-      <td><a href="#ABSTRACT">ABSTRACT</td>
-    </tr>
-    <tr>
-      <td><a href="#INTRODUCTION">INTRODUCTION</td>
-    </tr>
-    <tr>
-      <td><a href="#ANALYSIS AND DISCUSSION">ANALYSIS AND DISCUSSION</td>
-    </tr>
+   <hr>
 
-    <tr>
-      <td><a href="#REFERENCES">REFERENCES</td>
-    </tr>
-  </table>
+   <!-- Article title -->
+   <h2>
+   <b>How Can Drones Thrive In War?</b>
+   </h2>
 
-  <!-- ABSTRACT -->
-  <h3 id="ABSTRACT">ABSTRACT</h3>
-  <div style="max-width:900px; line-height:1.6; text-align:justify;">
+   <hr>
+      <!-- Table of Contents -->
+   <h3>Table of Contents</h3>
 
-  <p class ="ex1">
+   <ul>
+       <li><a href="#Abstract">Abstract</a></li>
+       <li><a href="#Introduction">Introduction</a></li>
+       <li><a href="#Analysis and discussion">Analysis and Discussion</a></li>
+       <li><a href="#Specifications">Technical Specifications</a></li>
+       <li><a href="#Conclusion">Conclusion</a></li>
+       <li><a href="#References">References</a></li>
+   </ul>
+
+   <hr>
+
+   <!-- Abstract -->
+   <h3 id="Abstract">Abstract</h3>
+   <div style="max-width:900px; line-height:1.6; text-align:justify;">
+      <p>
+     One of the things that make drones intriguing is how versatile they are. They are useful in areas such as 
+     agriculture and security; however, it is shocking to find how crucial drones are when they are used in war. 
+     This paper presents how the features and the functions of drones make them successful in war. 
+      </p>
+   </div>
+
+   <hr>
+
+   <!-- Introduction -->
+   <h3 id="Introduction">Introduction</h3>
+   <div id="Introduction_InText" style="max-width:900px; line-height:1.6; text-align:justify;">
+      <p>
+     
+      </p>
+                                 
+   </div>
+   <h3 id="Analysis and discussion">Analysis and Discussion</h3>
+   <div id="Analysis_InText" style="max-width:900px; line-height:1.6; text-align:justify;">
+
+<p>
+
+  
+</p>
+
+<p>
+
+  
+</p>
+
+<p>
+
+  
+</p>
+
+<p>
+
+</p>
+
+<p>
+
+  
+</p>
+
+</div>
+   <hr>
+<h3 id="Specifications">Technical Specifications</h3>
+
+<table>
+<tr>
+    <th>Specification</th>
+    <th>Details</th>
+</tr>
+<tr>
+    <td>Engine</td>
+    <td>M156 naturally aspirated V8</td>
+</tr>
+<tr>
+    <td>Engine capacity</td>
+    <td>6.2 litres</td>
+</tr>
+<tr>
+    <td>Power output</td>
+    <td>451 bhp (approximately)</td>
+</tr>
+<tr>
+    <td>Transmission</td>
+    <td>7-speed automatic</td>
+</tr>
+<tr>
+    <td>Drivetrain</td>
+    <td>Rear-wheel drive</td>
+</tr>
+</table>
+<hr>
+   
+<h3>Mercedes C63 AMG Horsepower Comparison</h3>
+
+<div id="chart_div" style="width: 800px; height: 400px;"></div>
+   
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Model', 'Horsepower'],
+        ['W204 C63 AMG', 451],
+        ['W205 C63 AMG', 469],
+        ['W206 C63 S E Performance', 671]
+    ]);
+
+    var options = {
+        title: 'Mercedes C63 AMG Horsepower Comparison',
+        hAxis: {title: 'Horsepower (hp)'},
+        vAxis: {title: 'Mercedes Model'},
+        legend: 'none',
+        colors: ['#3366cc']
+    };
+
+    var chart = new google.visualization.BarChart(
+        document.getElementById('chart_div')
+    );
+
+    chart.draw(data, options);}
+</script>
     <p>
-      One of the things that make drones intriguing is how versatile they are. They are useful in areas such as 
-      agriculture and security; however, it is shocking to find how crucial drones are when they are used in war. 
-      This paper presents how the features and the functions of drones make them successful in war. 
+    <b>Sources:</b><br>
+    Oagana (n.d.) – W204 C63 AMG<br>
+    Mercedes-Benz USA (2018) – W205 C63 AMG<br>
+    Mercedes-Benz USA (2022) – W206 C63 S E Performance
+</p>
+   
+<h3 id="Conclusion">Conclusion</h3>
+
+<div id="Conclusion_InText" style="max-width:900px; line-height:1.6; text-align:justify;">
+   <p>
+   In conclusion, the W204 C63 shows what effective mechanical engineering can produce, a high-performance car whilst being an everyday use. The rear wheel drive, seven-speed automatic transition, V-line intake and many more advantages makes the engineering in this car a wonder. However, nothing can be perfect, whilst producing a high power it comes at a cost as it has high emission due to high fuel consumption.
+   Rear wheel drive allows RTP at high speeds, but it also allows to car spin at wet conditions.
+   Overall, the W204 C63 AMG remains an important example of Mercedes-AMG's engineering approach and deserves recognition as one of the most memorable performance cars of its era.
    </p>
-  </div>
 
-  <hr>
+</div>
+ <hr>
+<h3 id="References">References</h3>
 
-<!-- INTRODUCTION -->
-  <h3 id="INTRODUCTION">INTRODUCTION</h3>
-  <div style="max-width:900px; line-height:1.6; text-align:justify;">
+<p>
+Wikipedia. (2021). <i>Mercedes-AMG</i>. [online] Available at:
+<a href="https://en.wikipedia.org/wiki/Mercedes-AMG">
+https://en.wikipedia.org/wiki/Mercedes-AMG
+</a>
+[Accessed 22 Oct. 2026].
+</p>
 
-    
-</h1>p>
-  <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<p>
+Oagana, A. (n.d.). <i>2007 Mercedes-Benz C 63 AMG (W204)</i>. [online]
+autoevolution. Available at:
+<a href="https://www.autoevolution.com/cars/mercedes-benz-c-63-amg-w204-2007.html">
+https://www.autoevolution.com/cars/mercedes-benz-c-63-amg-w204-2007.html
+</a>
+[Accessed 22 Oct. 2026]
+</p>
+
+<p>
+PH Staff (2021). <i>Mercedes C63 AMG (W204) | PH used buying guide</i>. [online] Pistonheads.com. Available at:
+<a href="https://www.pistonheads.com/news/ph-buying-guides/mercedes-c63-amg-w204--ph-used-buying-guide/31875">https://www.pistonheads.com/news/ph-buying-guides/mercedes-c63-amg-w204--ph-used-buying-guide/31875
+</a>
+[Accessed 22 Oct. 2026].
+</p>
+
+<p>
+Contributors to Wikimedia projects (2004). <i>A type of vehicle suspension</i>. [online] Outlook.com. Available at:
+<a href="https://en.wikipedia.org/wiki/Multi-link_suspension">https://en.wikipedia.org/wiki/Multi-link_suspension
+</a>
+[Accessed 25 Oct. 2026].
+</p>
+
+<p>
+Cenizo, S. (2026). <i>V8 vs inline-six: Which engine design actually makes more sense?</i> [online] Autoblog. Available at:
+<a href="https://www.autoblog.com/features/v8-vs-inline-six-which-engine-design-actually-makes-more-sense">https://www.autoblog.com/features/v8-vs-inline-six-which-engine-design-actually-makes-more-sense
+</a>
+[Accessed 25 Oct. 2026].
+</p>
+
+<p>
+Auto-Data.net (2007). <i>Mercedes-Benz C-class (W204) AMG C 63 V8 (457 hP) 7G-TRONIC AMG speedshift plus</i>. [online] Auto-Data.net. Available at:
+<a href="https://www.auto-data.net/en/mercedes-benz-c-class-w204-amg-c-63-v8-457hp-7g-tronic-amg-speedshift-plus-12549">https://www.auto-data.net/en/mercedes-benz-c-class-w204-amg-c-63-v8-457hp-7g-tronic-amg-speedshift-plus-12549
+</a>
+[Accessed 28 Oct. 2026].
+</p>
+
+<p>
+Bascombe, K. (2019). <i>Mercedes-Benz M156 (C63 AMG, S63 AMG, &amp; more) cylinder head service recommendations</i>. [online] FCP Euro. Available at:
+<a href="https://www.fcpeuro.com/blog/mercedes-benz-m156-c63-amg-cylinder-head-service-recommendations">https://www.fcpeuro.com/blog/mercedes-benz-m156-c63-amg-cylinder-head-service-recommendations
+</a>
+[Accessed 1 Nov. 2026].
+</p>
+
+<p>
+Heywood, J.B. and Welling, O.Z. (2009). Trends in performance characteristics of modern automobile SI and diesel engines. <i>SAE International Journal of Engines</i>, [online] 02(1), pp.1650–1662. doi:10.4271/2009-01-1892.
+</p>
+
+<p>
+Capretto, A. (2024). <i>Pros and cons: Forced induction vs. naturally aspirated engines</i>. [online] CarBuzz. Available at:
+<a href="https://carbuzz.com/forced-induction-vs-naturally-aspirated-engines-comparison/">https://carbuzz.com/forced-induction-vs-naturally-aspirated-engines-comparison/
+</a>
+[Accessed 5 Nov. 2026].
+</p>
+
+<p>
+Avantgarde Automotive (2026). <i>How to recognise delayed shifting on a Mercedes-Benz automatic</i>. [online] Avantgarde Automotive. Available at:
+<a href="https://avantgarde-automotive.co.uk/help-and-advice/news/how-can-i-recognise-delayed-shifting/">https://avantgarde-automotive.co.uk/help-and-advice/news/how-can-i-recognise-delayed-shifting/
+</a>
+[Accessed 3 Nov. 2026].
+</p>
+
+<p>
+Yousuf Ashraf and John Barker (2023). <i>Mercedes-AMG C63</i>. [online] Available at:
+<a href="https://www.evo.co.uk/mercedes/c-class/c63-amg">https://www.evo.co.uk/mercedes/c-class/c63-amg
+</a>
+[Accessed 9 Nov. 2026].
+</p>
+
+<p>
+Mercedes-Benz USA (2018). <i>The new Mercedes-AMG C 63 models</i>. [online]
+Available at:
+<a href="https://media.mbusa.com/news/the-new-mercedes-amg-c-63-models">
+https://media.mbusa.com/news/the-new-mercedes-amg-c-63-models
+</a>
+[Accessed 11 Nov. 2026].
+</p>
+
+<p>
+Mercedes-Benz USA (2022). <i>The new Mercedes-AMG C 63 S E PERFORMANCE: the dawn of a new era</i>. [online]
+Available at:
+<a href="https://media.mbusa.com/news/the-new-mercedes-amg-c-63-s-e-performance-the-dawn-of-a-new-era">
+https://media.mbusa.com/news/the-new-mercedes-amg-c-63-s-e-performance-the-dawn-of-a-new-era
+</a>
+[Accessed 11 Nov. 2026].
+</p>
+
+ 
+<hr>
+   
+<button id="colorButton">Click to change colour</button>
+    <script>
+var button = document.getElementById("colorButton");
+
+function changeColor() {
+    var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    button.style.backgroundColor = randomColor;
+}
+
+button.addEventListener("click", changeColor);
+</script>
+    <p>Enter some text below:</p>
+
+<input type="text" id="textInput">
+
+<button id="alertButton">Show Alert</button>
+
+<script>
+var input = document.getElementById("textInput");
+var alertButton = document.getElementById("alertButton");
+
+function showAlert() {
+    alert("You entered: " + input.value);
+}
+
+alertButton.addEventListener("click", showAlert);
+</script>
+   
+<p id="randomNumber">Your random number will appear here.</p>
+
+<button id="numberButton">Generate Random Number</button>
+
+<script>
+function generateNumber() {
+    var number = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("randomNumber").innerHTML = number;
+}
+
+document.getElementById("numberButton").addEventListener("click", generateNumber);
+</script>
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
@@ -101,8 +324,8 @@
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'oc00635';
-        const repo = 'OtiC11';
+        const username = 'fepsfy7006631';
+        const repo = 'FY7006631';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -161,13 +384,16 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+      const IntroductionCount = displayWordCount("Introduction_InText");
+      const AnalysisCount = displayWordCount("Analysis_InText");
+      const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
+  window.addEventListener('load', displayTotalWordCount);
+</script>  
+</body>
+</html>
